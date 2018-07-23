@@ -1,3 +1,4 @@
+#include "bubble_sort.h"
 #include <stdio.h>
 
 //每次比较两个相邻的元素，如果它们的顺序错误就把它们交换过来,复杂度O(N^2)
@@ -13,14 +14,4 @@ void bubble_sort(int *array,int start,int end){
 			}
 		}
 	}
-}
-
-int main(void){
-	int j=0;
-	int i[5]={1,3,4,2,5};
-	bubble_sort(i,0,4);
-	for(j=0;j<5;j++){
-		printf("%d ",i[j]);
-	}
-	return 0;
 }

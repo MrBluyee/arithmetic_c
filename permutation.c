@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "permutation.h"
 
 //全排列
 void permutation(int *array,int start,int end){
@@ -23,10 +24,4 @@ void permutation(int *array,int start,int end){
 		}
 		printf("\n");
 	}
-}
-
-int main(void){
-	int i[5]={1,3,4,2,5};
-	permutation(i,0,4);
-	return 0;
 }

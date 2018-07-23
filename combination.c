@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-#define N 5
+#include "combination.h"
 
 //组合,C(num,m)
 void combination(int *array,int start,int num,int m){
@@ -20,10 +19,4 @@ void combination(int *array,int start,int num,int m){
 	combination(array,start+1,num,m);
 	top--;
 	combination(array,start+1,num,m);
-}
-
-int main(void){
-	int i[N]={1,3,4,2,5};
-	combination(i,0,5,2);
-	return 0;
 }

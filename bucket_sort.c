@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "bucket_sort.h"
 
 //排序比较小的数值,复杂度O(M+N)
 void bucket_sort(int *array,int start,int end){
@@ -12,10 +13,4 @@ void bucket_sort(int *array,int start,int end){
 			printf("%d ",i);
 		}
 	}
-}
-
-int main(void){
-	int i[5]={1,3,4,2,5};
-	bucket_sort(i,0,4);
-	return 0;
 }
